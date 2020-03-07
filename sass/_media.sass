@@ -1,0 +1,53 @@
+@media screen and ( max-width: 2100px )
+  .promo
+    &::after
+      top: 25%
+      right: 10%
+      width: 400px
+      height: 50%
+    &::before
+      display: none
+    &-logo
+      margin-bottom: 100px
+    &-title
+      font-size: 50px
+    
+  .start
+    background-position: 100% 90%
+    background-size: 40%
+    &-title
+      font-size: 50px
+
+@media screen and ( max-width: 1700px  ) 
+  .promo
+    &::before
+     display: none
+    &::after
+     bottom: 30%
+     right: 5% 
+     background-position: 60% center 
+  .start 
+    background-position: 85% 70%
+    background-size: 35%
+
+@media screen and ( max-width: 1200px ) 
+  .promo
+    &::after
+      display: none
+    &::before
+      display: none
+  
+  .beginner
+    background: none
+  
+  .start
+    background: none
+  
+  .benefits
+    &-first-row
+      margin-bottom: 0px
+    &-col
+      margin-bottom: 70px
+  
+  .start
+    padding-top: 60px
