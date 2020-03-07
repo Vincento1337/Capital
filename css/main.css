@@ -1,0 +1,332 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v17-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v17-latin-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/GothamPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/GothamPro-Light.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "GothamPro", "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.promo {
+  position: relative;
+  padding-top: 143px;
+  padding-bottom: 392px;
+  background: url("../img/background.jpg") no-repeat center center/cover;
+}
+
+.promo::after {
+  position: absolute;
+  content: "";
+  width: 17%;
+  height: 30%;
+  bottom: 0;
+  right: 14%;
+  background: url("../img/cow.png") no-repeat center top/cover;
+  z-index: 2;
+}
+
+.promo::before {
+  position: absolute;
+  content: "";
+  right: 12%;
+  bottom: 0;
+  width: 1045px;
+  height: 1075px;
+  background: url("../img/man.png") no-repeat center center/cover;
+  z-index: 1;
+}
+
+.promo-logo {
+  margin-bottom: 241px;
+}
+
+.promo-title {
+  margin-bottom: 88px;
+  font-family: "GothamPro", sans-serif;
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo-title-frag {
+  font-weight: 300;
+}
+
+.promo-text {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.link {
+  display: block;
+  margin-top: 87px;
+  padding: 15px 30px;
+  width: 166px;
+  font-family: 'Open sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  -webkit-box-shadow: 0 0 60px 5px #b14599;
+          box-shadow: 0 0 60px 5px #b14599;
+  background: -webkit-gradient(linear, left top, right top, from(#934499), to(#b14599));
+  background: -webkit-linear-gradient(left, #934499, #b14599);
+  background: -o-linear-gradient(left, #934499, #b14599);
+  background: linear-gradient(to right, #934499, #b14599);
+}
+
+.beginner {
+  padding-top: 320px;
+  padding-bottom: 100px;
+  background: url("../img/beginner-bg.jpg") no-repeat 73% 60%;
+}
+
+.beginner-suptitle {
+  position: relative;
+  display: block;
+  margin-bottom: 27px;
+  font-size: 27px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #c2a1cc;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.beginner-suptitle::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: -28%;
+  width: 452px;
+  height: 108px;
+  background: url(../img/lines.png) no-repeat center center;
+}
+
+.beginner-title {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-family: "GothamPro", sans-serif;
+  font-size: 81px;
+  font-weight: 300;
+  color: #10181f;
+  letter-spacing: -0.05em;
+}
+
+.beginner-title-frag {
+  font-weight: 700;
+}
+
+.beginner-text {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.beginner-link {
+  width: 260px;
+}
+
+.benefits {
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+
+.benefits-first-row {
+  margin-bottom: 190px;
+}
+
+.benefits-title {
+  margin-bottom: 160px;
+  font-family: "GothamPro", sans-serif;
+  font-size: 81px;
+  font-weight: 300;
+  color: #10181f;
+  text-align: center;
+}
+
+.benefits-title-frag {
+  font-weight: 700;
+}
+
+.benefits-pic {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.benefits-text {
+  display: block;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #10181f;
+  text-align: center;
+}
+
+.start {
+  padding-top: 320px;
+  padding-bottom: 100px;
+  background: url("../img/form-fill.png") no-repeat 73% 90%;
+  background-color: #fefcfd;
+}
+
+.start-suptitle {
+  position: relative;
+  display: block;
+  margin-bottom: 27px;
+  font-size: 27px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #c2a1cc;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.start-suptitle::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: -28%;
+  width: 452px;
+  height: 108px;
+  background: url(../img/lines.png) no-repeat center center;
+}
+
+.start-title {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-family: "GothamPro", sans-serif;
+  font-size: 81px;
+  font-weight: 300;
+  color: #10181f;
+  letter-spacing: -0.05em;
+}
+
+.start-title-frag {
+  font-weight: 700;
+}
+
+.start-text {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.start-link {
+  width: 260px;
+}
+
+@media screen and (max-width: 2100px) {
+  .promo::after {
+    top: 25%;
+    right: 10%;
+    width: 400px;
+    height: 50%;
+  }
+  .promo::before {
+    display: none;
+  }
+  .promo-logo {
+    margin-bottom: 100px;
+  }
+  .promo-title {
+    font-size: 50px;
+  }
+  .start {
+    background-position: 100% 90%;
+    -webkit-background-size: 40% 40%;
+            background-size: 40%;
+  }
+  .start-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .promo::before {
+    display: none;
+  }
+  .promo::after {
+    bottom: 30%;
+    right: 5%;
+    background-position: 60% center;
+  }
+  .start {
+    background-position: 85% 70%;
+    -webkit-background-size: 35% 35%;
+            background-size: 35%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .promo::after {
+    display: none;
+  }
+  .promo::before {
+    display: none;
+  }
+  .beginner {
+    background: none;
+  }
+  .start {
+    background: none;
+  }
+  .benefits-first-row {
+    margin-bottom: 0px;
+  }
+  .benefits-col {
+    margin-bottom: 70px;
+  }
+  .start {
+    padding-top: 60px;
+  }
+}
